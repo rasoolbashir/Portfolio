@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>    
+    
 </head>
 <body>
   <!-- <=========Navbar Start=============> -->
@@ -47,17 +48,19 @@
             <div class="col-lg-6">
                 <div class="text" >
                     <h1>Hello, my name is RASOOL<span> BASHIR</span></h1>
-                    <h2>I'm a <span class="auto-type"></span></h2>                       
-                    <button   id="contactButton"  type="button" class="btn btn-outline-primary mt-3" ></i> <span>Contact Us</span></button>
-                  
-                    <button   id="DowloadButton" type="button" class="btn btn-outline-primary mt-3"></i> <span>DOWNLOAD CV</span></button>
-                    
+                    <h2>I'm a <span class="auto-type"></span></h2>   
+                    <a href="#Contact">                     
+                    <button   id="contactButton"  type="button" class="btn btn-outline-primary mt-3"  ></i> <span>Contact me</span></button>
+                </a>
+                  <a href="https://drive.google.com/file/d/1-AXmMYXr3Z3kFiWG_1YV1qjaObmbIEoz/view?usp=drivesdk" target="_blank">
+                     <button id="DowloadButton" type="button" class="btn btn-outline-primary mt-3"></i> <span>DOWNLOAD CV</span></button>
+                </a>
                 </div>
                 <div class="contact-icons">
-                    <a style="color: #147bbc;" href="https://www.linkedin.com/in/rasool-bashir-4aa25127b/"><i class="bx bxl-linkedin" ></i></a>
-                    <a style="color: white;" href="https://github.com/rasoolbashir"><i class="bx bxl-github"></i></a>
-                    <a style="color: #147bbc;" href=""><i class="bx bxl-facebook"></i></a>
-                    <a style="color: red;" href=""><i class="bx bxl-instagram"></i></a>
+                    <a style="color: #147bbc;" href="https://www.linkedin.com/in/rasool-bashir-4aa25127b/" target="_blank"><i class="bx bxl-linkedin" ></i></a>
+                    <a style="color: white;" href="https://github.com/rasoolbashir" target="_blank"><i class="bx bxl-github" ></i></a>
+                    <a style="color: #147bbc;" href="https://www.facebook.com/profile.php?id=100089364140591" target="_blank"><i class="bx bxl-facebook"></i></a>
+                    <a style="color: red;" href="https://www.instagram.com/code_with_gbians?igsh=MWQ2aHB1ZHBqcnZheg==" target="_blank"><i class="bx bxl-instagram"></i></a>
                 </div>
             </div>
             <div class="image-1 col-lg-6">
@@ -239,41 +242,47 @@
     </div>
 </section>
 <!-- skill end     -->
- <!-- contact start -->
- <div class="container contact-section" id="Contact">
-    <div class="row">
-      <div class="col-md-8 offset-md-2">
-        <h2 class="text-center ">Contact Me</h2>
-        <form id="contactForm">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-success btn-block" style="width: fit-content;">Submit</button>
-        </form>
+  <!-- contact start -->
+  <div class="cont-end" id="Contact">
+    <div class="container contact-section">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h2 class="text-center">Contact <span>Me</span></h2>
+          <form id="contactForm" onsubmit="return validateForm(event)">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success btn-block" style="width: fit-content;">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom" style="margin-top: 10%; text-align: center;">
+        <p class="copyright">
+          &copy; 2024 Personal Portfolio. All Rights Reserved | Crafted by <a href="https://github.com/rasoolbashir" target="_blank" class="link">rasoolbashir</a>
+        </p>
       </div>
     </div>
-    <div class="footer-bottom" style="margin-top: 10%; text-align: center;" >
-
-        <p class="copyright">
-          &copy; 2024 Personal Portfolio. All Rights Reserved | Crafted by <a href="https://github.com/rasoolbashir"
-            target="_blank" class="link">rasoolbashir</a>
-        </p>
-
-      </div>
   </div>
-<!-- contact section end -->
+  <!-- contact section end  -->
 
-<!-- bottom to top -->
+
+<!-- bottom to top start-->
 <a href="#" class="top"><i class='bx bx-up-arrow-alt'   ></i></a>
+<!-- bottom to top end -->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
